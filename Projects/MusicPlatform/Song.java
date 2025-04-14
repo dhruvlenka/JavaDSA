@@ -1,9 +1,9 @@
 package Projects.MusicPlatform;
 
 public class Song {
-    private String title;
-    private Singer singer;
-    private int duration;
+    private final String title;
+    private final Singer singer;
+    private final int duration;
 
     //parameterized constructor
     Song(String title, Singer singer, int duration){

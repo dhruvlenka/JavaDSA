@@ -3,12 +3,12 @@ package Projects.MusicPlatform;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Playlists {
-    private String name;
-    private List<Song> songs;
+public class Playlist {
+    private final String name;
+    private final List<Song> songs;
 
-    //paraemeteroized constructor
-    Playlists(String name){
+    //parameterized constructor
+    Playlist(String name){
         this.name = name;
         this.songs = new ArrayList<>();
     }

@@ -1,16 +1,18 @@
 package Sorting;
 
-public class MergeSortJQ {
+public class MergePractice {
     public static void main(String[] args) {
 
     }
     public static void merge(int[] arr, int start, int mid, int end){
-        int[] merged = new int[end-start+1];
+        int[] merged = new int [end-start+1];
         int left = start;
         int right = mid+1;
         int x = 0;
 
-        while (left <= mid && right <=end ){
+        //while loop
+        while(left <= mid && right <= end){
+            //
             if(arr[left] <= arr[right]){
                 merged[x++] = arr[left++];
             } else {
@@ -18,24 +20,27 @@ public class MergeSortJQ {
             }
         }
 
-        //if left
-        while (left <= mid){
+        //second while
+        while(left <= mid){
             merged[x++] = arr[left++];
         }
 
-        //right
-
+        //third whil3
         while (right <= end){
             merged[x++] = arr[right++];
         }
 
+
+        // for loop
         for(int i=0, j=start; i<merged.length; i++, j++){
             arr[j] = merged[i];
         }
     }
+
+    //divide and conquer
     public static void divide(int[] arr, int start, int end){
-        if(start < end){
-            int mid = start + (end-start)/2;
+        if(start<=end){
+            int mid = start + (end-start/2);
             divide(arr, start, mid);
             divide(arr, mid+1, end);
             merge(arr, start, mid, end);

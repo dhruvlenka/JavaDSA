@@ -4,7 +4,7 @@ public class PalindromeArray {
     public static void main(String[] args) {
         int[] arr = {111, 222, 333, 444, 20};
         int n = arr.length;
-        int result = palinArray(arr, n);
+        int result = isPalindrome(arr, n);
         System.out.println(result);
 
     }

@@ -9,6 +9,7 @@ public class ArrayListPractice {
         bangkok.add("Dhruv");
         bangkok.add("Deepak");
         bangkok.add("Daranath");
+
         System.out.println(bangkok);
 
         /*
@@ -25,5 +26,9 @@ public class ArrayListPractice {
         for(String trip: bangkok){
             System.out.print(trip + " ");
         }
+
+        ArrayList<Integer> arr = new ArrayList<>();
+        arr.add(1);
+        System.out.println(arr);
     }
 }

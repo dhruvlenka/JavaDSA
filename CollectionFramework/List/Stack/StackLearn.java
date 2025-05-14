@@ -23,6 +23,7 @@ public class StackLearn {
         Fast and Furious will remove because Fast and Furious
         comes lastly, but it will remove firstly.
          */
+
         System.out.println("Removing using .pop():  " + movies.pop());
         System.out.println("Now the CollectionFramework.List.Stack is: " + movies);
 

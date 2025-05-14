@@ -1,6 +1,23 @@
 package Recursion;
 
 public class Recursion_QuickSort {
+    public static void main(String[] args) {
+        int[] arr = {2,4,1,6,9};
+        int n = 5;
+
+        System.out.println("Sorting Using Recursion");
+        quickSort(arr, 0, n-1);
+        for(int i=0; i<n; i++){
+            System.out.println(arr[i] + " ");
+        }
+
+        System.out.println("Sorting Without Recursion");
+        partition(arr, 0, n-1);
+        for(int i=0; i<n; i++){
+            System.out.println(arr[i] + " ");
+        }
+    }
+    //swapping
     static void swap(int[] arr, int start, int end){
         int temp = arr[start];
         arr[start] = arr[end];
@@ -42,6 +59,7 @@ public class Recursion_QuickSort {
         return pivotIndex;
 
     }
+    //recursion
     static void quickSort(int[] arr, int start, int end){
         //base case: if array is 0 and 1 then we assume array is sorted.
         if(start >= end){
@@ -49,22 +67,13 @@ public class Recursion_QuickSort {
         }
 
         //partition
-        int p = partition(arr, start, end);
+        int pivot = partition(arr, start, end);
 
         //sorting the left part
-        quickSort(arr, start, p-1);
+        quickSort(arr, start, pivot-1);
 
         //sorting the right part
-        quickSort(arr, p+1, end);
+        quickSort(arr, pivot+1, end);
 
-    }
-    public static void main(String[] args) {
-        int[] arr = {2,4,1,6,9};
-        int n = 5;
-
-        quickSort(arr, 0, n-1);
-        for(int i=0; i<n; i++){
-            System.out.println(arr[i] + " ");
-        }
     }
 }

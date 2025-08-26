@@ -5,7 +5,7 @@ public class Buffer {
         System.out.println("StringBuffer");
 
         //StringBuffer length() vs capacity()
-        StringBuffer lenCap = new StringBuffer("Bruce");
+        StringBuffer lenCap = new StringBuffer("Bruce Wayne");
 
         System.out.println("buffer = " + lenCap);
         System.out.println("length = " + lenCap.length());

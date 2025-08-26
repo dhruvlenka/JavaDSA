@@ -140,6 +140,7 @@ public class StringMethod {
         for(String w: words){
             System.out.println(w);
         }
+
         //String[] split(String regex,int limit)
         String[]words2 = intro.split("\\s", 2);
         for(String w2: words2){

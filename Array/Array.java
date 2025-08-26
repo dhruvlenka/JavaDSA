@@ -51,5 +51,9 @@ public class Array {
         }
         System.out.println();
 
+        int[] data = {2,4,6,8,10};
+        System.out.println(data[0] + data[3]);
+
+
     }
 }

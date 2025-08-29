@@ -10,7 +10,7 @@ public class Student {
     int collegeYear = 2020;
 
     public static void main(String[] args) {
-        Student st = new Student();
+        Students st = new Students();
         System.out.println(st.studentName);
         System.out.println(st.college);
         System.out.println(st.branch);

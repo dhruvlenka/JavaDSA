@@ -2,7 +2,7 @@ package OOPS.ClassesAndObjects;
 
 import java.util.Scanner;
 
-class Students {
+class SchoolStudents {
     // Instance variables
     String name;
     int rollNumber;
@@ -13,7 +13,7 @@ class Students {
 class StudentInformationCollector {
     public static void main(String[] args) {
         // Create an instance of Student
-        Students student = new Students();
+        SchoolStudents student = new SchoolStudents();
 
         // Scanner to read user input
         Scanner scanner = new Scanner(System.in);

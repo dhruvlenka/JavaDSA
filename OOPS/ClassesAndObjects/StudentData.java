@@ -1,6 +1,6 @@
 package OOPS.ClassesAndObjects;
 
-public class Student {
+public class StudentData {
     String studentName = "Jack Reacher"; //attributes but defined with literals
     String college = "University of London";
     String branch = "B.Tech";
@@ -10,7 +10,7 @@ public class Student {
     int collegeYear = 2020;
 
     public static void main(String[] args) {
-        Students st = new Students();
+        StudentData st = new StudentData();
         System.out.println(st.studentName);
         System.out.println(st.college);
         System.out.println(st.branch);
